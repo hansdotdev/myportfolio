@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+   <!--Font Awesome CDN -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+   <!--Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Albert+Sans:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Albert+Sans:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="portfolio.css">
+   <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <!-- Build button (initially visible) -->
+    <button class="build" onclick="build()">Build My Portfolio</button>
+
+    <!-- Body content initially hidden -->
+    <div class="content" style="display: none;">
+        
+        <!-- Navbar -->
+        <nav class="icon-navbar">
+            <ul></ul>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="intro-wrapper">
+                <img src="img/profile.jpg" alt="profile" class="profile-img">
+                <div class="intro-container">
+                    <h2>Hi,</h2>
+                    <h1>I'm <span class="highlight"></span></h1> 
+                    <p id="intro-text" class="intro-text"></p> 
+                    <a href="#about" class="contact-button" ></a> 
+                    <a href="#about" class="change" onclick="change()"><button>Change Text</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div id="light-ball1" class="design"></div>
+            <div id="light-ball2" class="design"></div>
+            <h2 class="fade-in"></h2> 
+            <p class="fade-in"></p> 
+            <a href="#skills"><button id="addDesign" onclick="add()">Add design</button></a>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="design">
+                <div class="light-ball big-left"></div>
+                <div class="light-ball small-right-1"></div>
+                <div class="light-ball small-right-2"></div>
+            </div>
+            <h2 class="fade-in"></h2> 
+            <div class="skills-container"></div> 
+            <a href="#projects"><button id="hover" onclick="addHover()">Add Hover & Improve layout</button></a>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title"></h2> 
+            <div class="folder-container"></div>
+            <a href="#contact"><button id="animation" onclick="animation()">Add Animation</button></a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h1 class="section-title"></h1> 
+            <div class="social-icons"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p></p> 
+        </footer>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>
